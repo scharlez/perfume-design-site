@@ -12,25 +12,79 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    #container {
+      min-height: 100vh;
+      display:flex;
+    }
+
+    .left {
+      width: 50vw;
+    }
+
+    .right {
+      width: 50vw; 
+
+    }
+    #landing-title {
+
+    }
+
+    #perfume-title {
+      font-size: 70px;
+    }
+
+    #perfume-desc {
+
+    }
+
+    #button-style{
+    background-color: #2B4865; 
+    border-color: #002B5B;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+
   </style>
 </head>
+
 <body>
+  <div id="container">
 
-  Preview
+    <div className="left">
+      <img 
+              id="perfume-photo"
+              src="./images/image-product-desktop.jpg" 
+          /> 
+    </div>
+   <div className="right">
+      <h3 id="landing-title">Perfume</h3>
 
-  Gabrielle Essence Eau De Parfum
+      <h2 id="perfume-title">Gabrielle Essence Eau De Parfum</h2>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+      <p id="perfume-desc">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.
+      </p>
 
-  $149.99
-  $169.99
+      <p>$149.99</p>
+      <p>$169.99</p>
+      <div className="button"> 
+        <Button id="button-style">
+          Add to Cart
+        </Button> 
+      <br />
+  </div>
+    </div>
 
-  Add to Cart
-  
-  <div class="attribution">
+  </div>
+  <div className="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Steven C. Dunn</a>.
   </div>
 </body>
 </html>
